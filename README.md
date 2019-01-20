@@ -1,7 +1,7 @@
 # newInsulin01
 
-srcbdd is bdd version java source code.
-srckey is Java+JML KeY tool source code.
+srcbdd a is bdd version java source code file.
+srckey a is Java+JML KeY tool source code file.
 
 The project is still ongoing...
 
