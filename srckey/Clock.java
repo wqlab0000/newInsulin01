@@ -13,8 +13,7 @@ public class Clock extends Thread{
 
 
     private int second; //@ in _time;
-    //@ private invariant 0 <= read;
-    private int read; //@ in _time;
+   
     private /*@ spec_public @*/ double insulinDose;
     private /*@ spec_public @*/ double basal_rate=0.5;
 
