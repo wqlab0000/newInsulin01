@@ -4,14 +4,13 @@ import static java.lang.System.out;
 import java.util.InputMismatchException;
 
 
-//import java.util.InputMismatchException;
 
 
-//Given("^insulin pump is turned on$")
+@Given("^insulin pump is turned on$")
 public class Patient {
     
     
-//Given ("insulin pump delivers basal rate of insulin")
+@Given ("insulin pump delivers basal rate of insulin")
 
     private /*@ spec_public @*/int glucose;
     private /*@ spec_public @*/double basal_rate=0.5;
@@ -22,15 +21,7 @@ public class Patient {
     InsulinPump insulinPump3 = new InsulinPump();
     InsulinPump insulinPump4 = new InsulinPump();
 
-
-
-    Clock clock1 = new Clock();
-    Clock clock2 = new Clock();
-
-    
-    
-    
-    
+ 
 
     public int readGlucose() {
         
@@ -40,19 +31,15 @@ public class Patient {
     }
 
     
-//When("^patient intake food and blood glucose level is greater than n (\\d+)$")
+@When("^patient intake food and blood glucose level is greater than n (\\d+)$")
     public void foodIntake() {
         
-        insulinPump1.changeToBolus();//food intake insulin dose change to bolus.
-    
-   
-        
-        
-//Then("^insulin pump deliver bolus rate of insulin$")
-        
+        insulinPump1.changeToBolus();//food intake insulin dose change to bolus.    
        
     }
     
+    
+ @Then("^insulin pump deliver bolus rate of insulin$")   
     
     
     public void exercise(){
@@ -76,7 +63,6 @@ public class Patient {
         
     }
     
-     public void show () {
-        //System.out.println("Glucose level is :" glucose + "\n");
+     
 }
 }
