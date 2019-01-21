@@ -2,9 +2,12 @@ import java.util.*;
 import java.math.*;
 import static java.lang.System.out;
 import java.util.InputMismatchException;
+import org.junit.runner.RunWith;
 
-
-
+RunWith(InsulinPump.class)
+Cucumber.Options(
+format = {"pretty", "json:target/"},
+features = {"src/insulinPump/"})
 
 @Given("^insulin pump is turned on$")
 public class Patient {
