@@ -3,20 +3,20 @@ import java.math.*;
 import static java.lang.System.out;
 import java.util.InputMismatchException;
 import java.util.InputMismatchException;
-//import org.junit.runner.RunWith;
+import org.junit.runner.RunWith;
 
-//RunWith(InsulinPump.class)
-//Cucumber.Options(
-//format = {"pretty", "json:target/"},
-//features = {"src/insulinPump/"})
+RunWith(InsulinPump.class)
+Cucumber.Options(
+format = {"pretty", "json:target/"},
+features = {"src/insulinPump/"})
 
 
-//@Given("^insulin pump is turned on$")
+@Given("^insulin pump is turned on$")
 public class InsulinPump{
-    private /*@ spec_public @*/ double insulinDose;
-    private /*@ spec_public @*/ double basal_rate=0.5;
-    private /*@ spec_public @*/ double bolus_rate;
-    private /*@ spec_public @*/ String insulinpump;
+    private double insulinDose;
+    private double basal_rate=0.5;
+    private double bolus_rate;
+    private String insulinpump;
     
     Patient patient1 = new Patient();
     Patient patient2 = new Patient();
@@ -26,27 +26,17 @@ public class InsulinPump{
 
 
     
-    /*@ public invariant glucose >= 70;
-      @
-      @*/
 
-//@Given ("^insulin pump delivers basal rate of insulin$")
+@Given ("^insulin pump delivers basal rate of insulin$")
 
-    public /*@ spec_public @*/ int glucose;
+    public int glucose;
 
-    /*@ public invariant glucose <= 250 ==> !bolus &&
-      @                  glucose > 250 ==> bolus;
-      @*/
-    private /*@ spec_public @*/ boolean bolus;
+ 
+    private boolean bolus;
 
-    /*@ requires g >= 0;
-      @ ensures glucose == \old(glucose) + g;
-      @ assignable glucose, bolus;
-      @*/
-    
-    
+  
 
-//@When("^patient's blood glucose level is greater than n (\\d+)$")
+@When("^patient's blood glucose level is greater than n (\\d+)$")
     
     public void stepInsulinPump(){
         patient1.readGlucose();//read glucose from patient
@@ -68,16 +58,7 @@ public class InsulinPump{
 
 
 
-    /*@ requires glucose > 250;
-      @ ensures bolus;
-      @ assignable bolus;
-      @ requires glucose <= 250;
-      @ ensures basal;
-      @ assignable basal;
-      @*/
-    
-
-//@Then("^insulin pump status change to deliver bolus rate of insulin$")
+@Then("^insulin pump status change to deliver bolus rate of insulin$")
 
     public void changeToBolus() {
         bolus = true;
@@ -91,9 +72,6 @@ public class InsulinPump{
         
     }
 
-    /*@ ensures this.insulinpump == insulinpump;
-      @ assignable this.insulinpump;
-      @*/
     public void setInsulinpump(String insulinpump) {
          this.insulinpump = insulinpump;
     }
@@ -101,9 +79,8 @@ public class InsulinPump{
     
     
 
-    /*@ ensures \result == insulinpump;
-      @*/
-    public /*@ pure @*/ String getInsulinpump() {
+  
+    public String getInsulinpump() {
         return insulinpump;
     }
     
