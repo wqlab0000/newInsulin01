@@ -4,7 +4,7 @@ import static java.lang.System.out;
 import java.util.InputMismatchException;
 import org.junit.runner.RunWith;
 
-RunWith(InsulinPump.class)
+RunWith(Patient.class)
 Cucumber.Options(
 format = {"pretty", "json:target/"},
 features = {"src/insulinPump/"})
