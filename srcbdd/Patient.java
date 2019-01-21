@@ -15,9 +15,9 @@ public class Patient {
     
 @Given ("insulin pump delivers basal rate of insulin")
 
-    private /*@ spec_public @*/int glucose;
-    private /*@ spec_public @*/double basal_rate=0.5;
-    private /*@ spec_public @*/double bolus_rate;
+    private int glucose;
+    private double basal_rate=0.5;
+    private double bolus_rate;
    
     InsulinPump insulinPump1 = new InsulinPump();
     InsulinPump insulinPump2 = new InsulinPump();
