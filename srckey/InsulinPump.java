@@ -26,9 +26,6 @@ public class InsulinPump{
 
 
     
-    /*@ public invariant glucose >= 70;
-      @
-      @*/
 
 //Given ("^insulin pump delivers basal rate of insulin$")
 
@@ -39,10 +36,6 @@ public class InsulinPump{
       @*/
     private /*@ spec_public @*/ boolean bolus;
 
-    /*@ requires glucose >= 0;
-      @ ensures glucose == \old(glucose) + glucose;
-      @ assignable glucose, bolus;
-      @*/
     
     
 
