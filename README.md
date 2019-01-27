@@ -19,7 +19,7 @@ $javac *.java
 
 $java Test
 
-Then you will get the glucose level and corresponding insulin.
+Then you will get the glucose level and corresponding insulin the patient need.
 
 
 
