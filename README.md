@@ -12,11 +12,16 @@ or learning from the book called BDD in Action. https://www.manning.com/books/bd
 For using the srckey file, you need to download KeY tool first from https://www.key-project.org/.
 For further learning of KeY tool and JML, visit https://www.key-project.org/.
 
-Download src9 
+For understanding this, you need you learn cucumber tutorial https://docs.cucumber.io/guides/10-minute-tutorial/
 
-$javac *.java 
+InsulinPump.java describes, 
+if the precondition of insulin pump is off, when turn on the insulin pump, 
+then the postcodition is delivering basal does insulin.
+If the precondition of insulin pump is empty, when turn on the insulin pump, 
+then the postcodition is delivering basal does insulin.
 
-$java Main
+For using the the KeY tool to verify the code, 
+we need to use InsulinPump.java in srckey file.
 
 
 
