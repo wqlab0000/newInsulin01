@@ -11,4 +11,4 @@ Feature: Insulin pump delivers insulin or not
     | status | dose |
     | OFF | basalDose |
     | Empty | noDose |
-    | anything else! | noDose |
+    | anything else! | error |
