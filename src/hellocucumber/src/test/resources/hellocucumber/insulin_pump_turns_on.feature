@@ -1,5 +1,5 @@
-Feature: Insulin Pump turns on?
-  Insulin pump delivers insulin or not
+Feature: Insulin pump delivers insulin or not
+  
 
   Scenario Outline:   Insulin pump delivers basal dose or no dose
 
