@@ -20,10 +20,11 @@ then the postcodition is delivering basal does insulin.
 If the precondition of insulin pump is empty, when turn on the insulin pump, 
 then the postcodition is delivering basal does insulin.
 
-For assigning basalDose or noDose a value.
-We can use String methods below. 
+For assigning basalDose or noDose a value,
+we can use String methods below. 
  
  private String basalDose=String.valueOf(0.5);
+ 
  private String noDose=String.valueOf(0);
 
 
