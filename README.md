@@ -1,4 +1,11 @@
 # newInsulin01
+
+InsulinPump.java and Stepdefs.java can be found from 
+newInsulin01/src/hellocucumber/src/test/java/hellocucumber/InsulinPump.java
+
+insulin_pump_turns_on.feature can be found from
+newInsulin01/src/hellocucumber/src/test/resources/hellocucumber/insulin_pump_turns_on.feature
+
 srckey a is Java+JML KeY tool source code file.
 
 The project is still ongoing...
