@@ -3,6 +3,9 @@ srckey a is Java+JML KeY tool source code file.
 
 The project is still ongoing...
 
+# Intro
+___________________________________________________________________________________________________________________________
+
 BDD is a Behavior Driven Development Agile method for software development.
 The advantages of BDD is, in a project, developers, testers, product managers are working together to
 write the requirment document. Then use this document to translate to gherkin syntax.
@@ -16,12 +19,17 @@ For using the srckey file, you need to download KeY tool first from https://www.
 For further learning of KeY tool and JML, visit https://www.key-project.org/.
 
 For understanding this, you need you learn cucumber tutorial https://docs.cucumber.io/guides/10-minute-tutorial/
+For running the test, following commends are needed:
+
+$cd hellocucumber
+
+$mvn test
 
 InsulinPump.java describes, 
 if the precondition of insulin pump is off, when turn on the insulin pump, 
-then the postcodition is delivering basal does insulin.
+then the postcodition is delivering basal dose insulin.
 If the precondition of insulin pump is empty, when turn on the insulin pump, 
-then the postcodition is delivering basal does insulin.
+then the postcodition is delivering basal dose insulin.
 
 For assigning basalDose or noDose a value,
 we can use String methods below. 
@@ -34,6 +42,9 @@ we can use String methods below.
 For using the the KeY tool to verify the code, 
 we need to use InsulinPump.java in srckey file.
 
+load the InsulinPump.java from srckey to the KeY tool,
+press Start Proof button, 
+then the KeY prover will apply the rules automatically.
 
 
 
