@@ -4,7 +4,6 @@ srckey a is Java+JML KeY tool source code file.
 The project is still ongoing...
 
 # Intro
-___________________________________________________________________________________________________________________________
 
 BDD is a Behavior Driven Development Agile method for software development.
 The advantages of BDD is, in a project, developers, testers, product managers are working together to
