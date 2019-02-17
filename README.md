@@ -30,9 +30,11 @@ For further learning of KeY tool and JML, visit https://www.key-project.org/.
 For understanding this, you need you learn cucumber tutorial https://docs.cucumber.io/guides/10-minute-tutorial/
 For running the test, following commends are needed:
 
-$cd hellocucumber
+```bash
+cd hellocucumber
 
-$mvn test
+mvn test
+```
 
 InsulinPump.java describes, 
 if the precondition of insulin pump is off, when turn on the insulin pump, 
