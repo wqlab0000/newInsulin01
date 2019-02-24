@@ -31,7 +31,7 @@ For understanding this, you need you learn cucumber tutorial https://docs.cucumb
 For running the test, following commends are needed:
 
 ```bash
-cd hellocucumber
+cd src/hellocucumber
 
 mvn test
 ```
