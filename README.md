@@ -26,6 +26,10 @@ KeY generates a fully automated correctness proof, the failed proof attempts can
 For using the srckey file, you need to download KeY tool first from https://www.key-project.org/.
 For further learning of KeY tool and JML, visit https://www.key-project.org/.
 
+Load srckey/insulinPump.java to KeY tool and press the start proof button.
+The proof automatically generates by applying the proof rules in the KeY tool. 
+
+
 ## Cucumber tool
 For understanding this, you need you learn cucumber tutorial https://docs.cucumber.io/guides/10-minute-tutorial/
 For running the test, following commends are needed:
