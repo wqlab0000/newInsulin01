@@ -41,9 +41,8 @@ mvn test
 ```
 
 InsulinPump.java describes, 
-if the precondition of insulin pump is off, when turn on the insulin pump, 
-then the postcodition is delivering basal dose insulin.
-If the precondition of insulin pump is empty, when turn on the insulin pump, 
+the precondition of insulin pump is off, 
+when turn on the insulin pump, 
 then the postcodition is delivering basal dose insulin.
 
 For assigning basalDose or noDose a value,
