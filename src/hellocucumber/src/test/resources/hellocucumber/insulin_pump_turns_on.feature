@@ -1,14 +1,12 @@
-Feature: Insulin pump delivers insulin or not
-  
+Feature: Insulin Pump delivers insulin dose once turned on
 
-  Scenario Outline:   Insulin pump delivers basal dose or no dose
+Scenario Outline: Insulin Pump delivers insulin dose
+Given Insulin Pump shows current glucose level is "<glucose>"
+When Insulin Pump turns on
+Then Insulin Pump delivers "<dose>"
 
-    Given insulin pump  "<status>"
-    When insulin pump turns on
-    Then insulin pump delivers "<dose>"
-
-  Examples:
-    | status | dose |
-    | OFF | basalDose |
-    | Empty | noDose |
-    | anything else! | error |
+Examples:
+| glucose | dose |
+| 250     | 2 |
+| 150     | 0.5 |
+| 200     | 0.5 |
