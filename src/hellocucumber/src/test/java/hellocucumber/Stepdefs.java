@@ -5,22 +5,26 @@ import cucumber.api.java.en.When;
 import cucumber.api.java.en.Then;
 import static org.junit.Assert.*;
 
+
+
 public class Stepdefs {
-     private String status;
+     private int glucose;
      private String actualDose;
 
-@Given("^Insulin Pump is OFF$")
-public void insulin_pump_is_off() {
-    status = "OFF";
+@Given("^Insulin Pump shows current glucose level is \"([^\"]*)\"$")
+public void insulin_pump_shows_current_glucose_level_is(int glucose) {
+    this.glucose = glucose;
 }
 
 @When("^Insulin Pump turns on$")
 public void insulin_pump_turns_on() {
-    actualDose = InsulinPump.insulinPump("OFF");
+    actualDose = InsulinPump.insulinPump(glucose);
 }
 
 @Then("^Insulin Pump delivers \"([^\"]*)\"$")
-public void i_should_be_told(String expectedDose) {
+public void insulin_pump_delivers(String expectedDose) {
     assertEquals(expectedDose, actualDose);
 }
+
+
 }
